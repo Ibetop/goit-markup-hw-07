@@ -34,19 +34,22 @@
     </li>
     </ul>
 </address>
-<button type="button"><svg><use></use></svg></button>
+<button class="menu-open-header" type="button" data-menu-open> <svg class="icon-menu-open" width="32" height="22"><use href="./images/icons.svg#icon-icon-mobile-menu"></use></svg></button>
 </div>
-<div class="mobile-menu">
-    <button class="button-hero-close" type="button" data-modal-close>
-        <div>
+<div class="mobile-menu" data-menu>
+    <button class="button-hero-close" type="button" data-menu-close>
         <svg  class="icon-cross" width="8" height="8"><use href="./images/icons.svg#icon-cross"></use></svg></button>
+    <div class="container-mobile-header">
+        <div>
     <nav class="nav-mobile">
    <ul class="nav-list-mobile list">
-       <li class="header-item-mobile"> <a class="nav-link-mobile current" href="./index.html" >Studio</a> </li>
+       <li class="header-item-mobile"> <a class="nav-link-mobile" href="./index.html" >Studio</a> </li>
        <li class="header-item-mobile"> <a class="nav-link-mobile"  href="./portfolio.html">Portfolio</a> </li>
        <li class="header-item-mobile"> <a class="nav-link-mobile" href="./index.html">Contacts</a> </li>
    </ul>
    </nav>
+   </div>
+   <div>
    <address class="address-mobile">
     <ul class="adress-list-mobile list"> 
        <li class="adress-item-mobile">
@@ -57,14 +60,13 @@
         </li>
        </ul>
    </address>
-   <div class="social-icon-header">
     <ul class="icon-social-list-mobile">
         <li class="icon-social-item-mobile"> <a class="icon-social-link-mobile" href="https://www.instagram.com/" target="_blank"><svg width="16" height="16"><use href="./images/icons.svg#icon-instagram"></use></svg> </a></li>
         <li class="icon-social-item-mobile"> <a class="icon-social-link-mobile" href="https://twitter.com/" target="_blank"><svg width="16" height="16"><use href="./images/icons.svg#icon-twitter"></use></svg> </a></li>
         <li class="icon-social-item-mobile"> <a class="icon-social-link-mobile" href="https://www.facebook.com/" target="_blank"><svg width="16" height="16"><use href="./images/icons.svg#icon-facebook"></use></svg> </a></li>
         <li class="icon-social-item-mobile"> <a class="icon-social-link-mobile" href="https://www.linkedin.com/" target="_blank"><svg width="16" height="16"><use href="./images/icons.svg#icon-linkedin"></use></svg> </a></li>
     </ul>
-   </div>
+</div>
 </div>
 </div>
 </header>
@@ -264,5 +266,6 @@
      </form>
     </div>
 <script src="./js/modal.js"></script>
+<script src="./js/menu.js"></script>
 </body>
 </html>
