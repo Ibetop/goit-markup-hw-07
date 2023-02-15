@@ -669,7 +669,6 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   line-height: 1.11;
   text-align: center;
   color: var(--primary-text-color)
-
 }
 
 /*-----Main-team-----*/
@@ -813,6 +812,7 @@ color: var(--secondari-text-color);
 /*--------Customers--------*/
 
 .customers {
+    width: 428px;
     margin: 0 auto;
     padding-top: 96px;
     padding-bottom: 96px;
@@ -1423,7 +1423,7 @@ textarea {
 
 .checkbox:checked + .border-checkbox {
     border-color: #404BBF;
-    background-image: url(../images/icon-checkbox.svg);
+    background-image: url(../images/checkbox-icon.svg);
     background-size: contain;
     background-origin: border-box;
 }
