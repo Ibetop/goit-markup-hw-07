@@ -414,6 +414,16 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     padding-bottom: 112px; 
    }
 
+   .capitallize-hero {
+            
+    text-transform: capitalize;
+    font-size: 36px;
+    line-height:1.11;
+    color: #FFFFFF;
+    margin-left: auto;
+    margin-right: auto;
+ }
+
    @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
@@ -425,19 +435,18 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         .hero-text {    
             margin-bottom: 50px;
             font-weight: 700;
-            font-size: 56px;
+            font-size: 36px;
             line-height:1.11;
             color: #FFFFFF;
             margin: 0 auto;
-            margin-bottom: 48px;
-            max-width: 500px;
+            margin-bottom: 72px;
+            max-width: 320px;
             }
 
          .hero-text {
             font-size: 36px;
             line-height:1.11;
             color: #FFFFFF;
-            max-width: 318px;
             }
         
 
@@ -459,14 +468,15 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
                      }
                     }
 
+                    .hero-text {  
+                        margin-bottom: 40px;
+                        font-size: 56px;
+                        max-width: 496px;
+                    }
+
                     .capitallize-hero {
-            
-                        text-transform: capitalize;
-                        font-size: 36px;
-                        line-height:1.11;
-                        color: #FFFFFF;
-                        margin-left: auto;
-                        margin-right: auto;
+                        font-size: 56px;
+                        text-transform: lowercase;
                      }
 
             }
@@ -487,6 +497,10 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
                      .hero {
                         background-image: linear-gradient( rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/bg-desktop.jpg);
                      }
+                    }
+
+                    .hero-text {  
+                        margin-bottom: 48px;
                     }
           }
 
