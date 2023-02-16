@@ -132,11 +132,26 @@ body {
     align-items: center;
 }
 
+.tel-link-mobile {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 29px;
+    line-height: 1.11;
+    color: #2E2F42;
+    text-decoration: none;
+    margin-bottom: 40px;
+}
+
 @media screen and (min-width: 428px) {
     .header {
         min-width: 428px;
     }
+  
+    .tel-link-mobile {
+        font-size: 36px;
+    }
 }
+
 
 @media screen and (max-width: 767px) {
 
@@ -164,7 +179,16 @@ body {
         justify-content: space-between;
     
     }
+
     
+    .header-item-mobile:not(:last-child) {
+     margin-bottom: 40px;
+    }
+    
+    .address-mobile {
+        margin-bottom: 48px;
+    }
+
     .nav-link-mobile {
         font-weight: 700;
         font-size: 36px;
@@ -176,17 +200,10 @@ body {
         transition-property: color;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    }
+
+    } 
     
-    .header-item-mobile:not(:last-child) {
-     margin-bottom: 40px;
-    }
-    
-    .address-mobile {
-        margin-bottom: 48px;
-    }
-    
-    .tel-link-mobile {
+    /* .tel-link-mobile {
         font-style: normal;
         font-weight: 600;
         font-size: 36px;
@@ -194,7 +211,7 @@ body {
         color: #2E2F42;
         text-decoration: none;
         margin-bottom: 40px;
-    }
+    } */
     
     .mail-link-mobile {
         font-style: normal;
@@ -889,6 +906,21 @@ color: var(--secondari-text-color);
     margin-left: 16px;
 }
 
+@media screen and (min-width: 428px) {
+    
+    .customers {
+        width: 428px;
+    }
+
+    .customers-container-item {
+        width: 396px;
+    }
+    
+    .customer-item {
+        width: 168px;
+    }
+}
+
 @media screen and (min-width: 768px) {
     .customers {
         width: 768px;
@@ -930,7 +962,7 @@ color: var(--secondari-text-color);
 
 .footer {
     margin: 0 auto;
-    width: 428px;
+    width: 320px;
     padding-top: 96px;
     padding-bottom: 96px;
     background-color: var(--primary-text-color)
@@ -1065,6 +1097,12 @@ margin-bottom: 16px;
     display: flex;
     margin-left: 16px;
     fill: #FFFFFF;
+}
+
+@media screen and (min-width: 428px) {
+    .footer {
+        width: 428px;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -1366,10 +1404,11 @@ color: var(--secondari-text-color);
     }
     .modal-btn {
         position: absolute;
-        top: 96px;
-        left: 18px;
-        width: 392px;
-        height: 586px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 290px;
+        height: 100%;
         background-color: #FCFCFC;
         transition-property: background-color;
         transition-duration: 250ms;
@@ -1386,7 +1425,7 @@ color: var(--secondari-text-color);
         display: flex;
         width: 24px;
         height: 24px;
-        margin-left: 360px;
+        margin-left: 85%;
         margin-top: 24px;
         background-color: #FCFCFC;
         border: 1px solid #E7E9FC;
@@ -1490,7 +1529,7 @@ textarea {
     position: relative;
     display: flex;
     flex-direction: column;
-    width: 360px;
+    width: 100%;
     height: 120px;
     font-size: 12px;
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -1519,7 +1558,7 @@ textarea {
 }
 
 .border-checkbox {
-    width: 16px;
+    width: 20px;
     height: 16px;
     border: 1.25px solid #2E2F42;
     border-radius: 2px;
@@ -1579,24 +1618,34 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 
+@media screen and (min-width: 428px) {
+    .modal-btn {
+        width: 396px;
+        height: 586px;
+        }
+
+        .border-checkbox {
+            width: 16px;
+            height: 16px;
+           }
+}
+
 @media screen and (min-width: 767px) {
     .modal-btn {
-        top: 96px;
-        left: 180px;
         width: 408px;
-        height: 586px;
         }
         
 }
 
 @media screen and (min-width: 1200px) {
     .modal-btn {
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 408px;
         height: 584px;
         }
         
+       .button-hero-close {
+        margin-left: 360px;
+       }
+
+       
 }
 
