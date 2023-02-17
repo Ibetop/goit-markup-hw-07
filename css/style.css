@@ -446,6 +446,10 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     margin-right: auto;
  }
 
+ .container-hero {
+    width: 265px;
+ }
+
    @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
@@ -472,6 +476,12 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
             }
         
 
+            @media screen and (min-width: 428px) {
+                .container-hero {
+                    width: 428px;
+                 }
+            }
+
 
             @media screen and (min-width: 768px) {
                 .hero {
@@ -489,6 +499,10 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
                         background-image: linear-gradient( rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/bg-tablet.jpg);
                      }
                     }
+
+                    .container-hero {
+                        width: 768px;
+                     }
 
                     .hero-text {  
                         margin-bottom: 40px;
@@ -512,6 +526,10 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
                 padding-top: 190px;
                 padding-bottom: 190px;
                }
+
+               .container-hero {
+                width: 1158px;
+             }
 
                @media (min-device-pixel-ratio: 2), 
                      (min-resolution: 192dpi),
