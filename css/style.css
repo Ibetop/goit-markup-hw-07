@@ -142,6 +142,10 @@ body {
     margin-bottom: 40px;
 }
 
+.icon-social-list-mobile .icon-social-item-mobile:not(:last-child) {
+    margin-right: 30px;
+}
+
 @media screen and (min-width: 428px) {
     .header {
         min-width: 428px;
@@ -149,6 +153,10 @@ body {
   
     .tel-link-mobile {
         font-size: 36px;
+    }
+
+    .icon-social-list-mobile .icon-social-item-mobile:not(:last-child) {
+        margin-right: 56px;
     }
 }
 
@@ -203,15 +211,6 @@ body {
 
     } 
     
-    /* .tel-link-mobile {
-        font-style: normal;
-        font-weight: 600;
-        font-size: 36px;
-        line-height: 1.11;
-        color: #2E2F42;
-        text-decoration: none;
-        margin-bottom: 40px;
-    } */
     
     .mail-link-mobile {
         font-style: normal;
@@ -256,16 +255,9 @@ body {
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
     
-    .icon-social-list-mobile .icon-social-item-mobile:not(:last-child) {
-        margin-right: 56px;
-    }
+    
 }
 
-@media screen and (min-width: 500px)  {
-    .mobile-menu {
-        display: none;
-    }
-}
 
 @media screen and (max-width: 767px) {
 
@@ -303,6 +295,10 @@ body {
         min-width: 768px;
        }
 
+       .mobile-menu {
+        display: none;
+    }
+
 .menu-open-header {
     display: none;
 }
@@ -334,7 +330,7 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
-.logo, .nav-link, .mail-link, .tel-link {
+.logo, .nav-link, .mail-link {
     padding-top: 24px;
     padding-bottom: 22px;
 }
@@ -785,7 +781,7 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         min-width: 768px;
     }
     .team-container-item {
-        width: 552px;
+        width: 553px;
     }
     .main-team {
         padding-bottom: 104px;
@@ -926,7 +922,7 @@ color: var(--secondari-text-color);
         width: 768px;
     }
     .customers-container-item {
-        width: 618px;
+        width: 553px;
     }
     .customers-list {
         margin-left: -24px;
@@ -1136,7 +1132,7 @@ margin-bottom: 16px;
         display: flex;
         flex-wrap: wrap;
         gap: 24px;
-        width: 552px;
+        width: 580px;
     }
     .footer-text {
         max-width: 264px;
@@ -1162,7 +1158,7 @@ margin-bottom: 16px;
     }
     .container-footer {
         justify-content: space-between;
-        width: 1085px;
+        width: 1158px;
     }
 }
 
